@@ -20,6 +20,10 @@ function getTotalPrice(object) {
 
 function getAverageAge(object) {
   // Aquí tu código
+  const arrayEdades = Object.values(object);
+  const totalEdades = arrayEdades.reduce((acumulador, elemento) => acumulador + elemento, 0);
+  const mediaEdades = totalEdades/arrayEdades.length
+  return mediaEdades
 }
 
 // =============================================================================
