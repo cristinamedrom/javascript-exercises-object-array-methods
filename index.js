@@ -22,8 +22,8 @@ function getAverageAge(object) {
   // Aquí tu código
   const arrayEdades = Object.values(object);
   const totalEdades = arrayEdades.reduce((acumulador, elemento) => acumulador + elemento, 0);
-  const mediaEdades = totalEdades/arrayEdades.length
-  return mediaEdades
+  const mediaEdades = totalEdades/arrayEdades.length;
+  return mediaEdades;
 }
 
 // =============================================================================
@@ -35,6 +35,9 @@ function getAverageAge(object) {
 
 function getPeopleArray(object) {
   // Aquí tu código
+  const arrayObject = Object.keys(object);
+  const arrayPersonas = arrayObject.map((name) => ({ name, age: object[name] }));
+  return arrayPersonas;  
 }
 
 // =============================================================================
