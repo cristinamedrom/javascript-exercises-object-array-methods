@@ -65,4 +65,8 @@ function getAbundantFruits(object) {
 
 function getCharacterCount(object) {
   // Aquí tu código
+  const objKeys = Object.keys(object);
+  const objValues = Object.values(object);
+  const textoCombinado = objKeys.join('') + objValues.join('');
+  return textoCombinado.length
 }
