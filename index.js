@@ -50,6 +50,10 @@ function getPeopleArray(object) {
 
 function getAbundantFruits(object) {
   // Aquí tu código
+  const frutasEntries = Object.entries(object);
+  const frutasFilter = frutasEntries.filter(([fruta, cantidad]) => cantidad > 10);
+  frutasMaps = frutasFilter.map(([fruta, cantidad]) => ({ fruit: fruta, quantity: cantidad }))
+  return frutasMaps
 }
 
 // =============================================================================
