@@ -36,7 +36,7 @@ function getAverageAge(object) {
 function getPeopleArray(object) {
   // Aquí tu código
   const arrayObject = Object.keys(object);
-  const arrayPersonas = arrayObject.map((name) => ({ name, age: object[name] }));
+  const arrayPersonas = arrayObject.map((elemento, index) => ({ name: elemento, age: object[elemento] }));
   return arrayPersonas;  
 }
 
